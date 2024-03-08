@@ -25,5 +25,4 @@ return {
 	},
 	initial_rows = 30,
 	initial_cols = 100,
-	window_decorations = "INTEGRATED_BUTTONS|RESIZE",
 }
