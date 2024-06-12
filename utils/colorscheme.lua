@@ -12,9 +12,9 @@ end
 function M.get_colorscheme()
 	local appearance = get_appearance()
 	if appearance:find("Dark") then
-		return "Catppuccin Mocha"
+		return "Everblush"
 	else
-		return "Catppuccin Latte"
+		return "Everforest Light"
 	end
 end
 

@@ -5,7 +5,7 @@ return {
 	webgpu_power_preference = "HighPerformance",
 	webgpu_preferred_adapter = require("utils.gpu_adapter"):pick(),
 
-	color_scheme = require("utils.colorscheme").get_colorscheme(),
+	color_scheme = "Everblush",
 
 	-- scrollbar
 	enable_scroll_bar = true,
