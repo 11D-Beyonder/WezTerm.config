@@ -1,10 +1,11 @@
-local Config = require("configs")
+local wezterm = require("wezterm")
+local config = wezterm.config_builder()
+config.color_scheme = "Everblush"
+config.font = wezterm.font("FantasqueSansM Nerd Font")
+config.font_size = 18
 
--- require("events.tab-title").setup()
--- require("events.new-tab-button").setup()
-
-return Config:init()
-		:append(require("configs.appearance"))
-		:append(require("configs.domains"))
-		:append(require("configs.fonts"))
-		:append(require("configs.general")).options
+local platform = require("utils.platform")()
+if platform.is_win then
+	config.default_prog = { "pwsh" }
+end
+return config
